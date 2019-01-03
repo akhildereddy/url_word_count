@@ -1,0 +1,21 @@
+<!doctype html>
+<title>Hello from Stranger</title>
+<table>
+    <tr>
+        <th>
+            Url
+        </th>
+        <th>
+            Count
+        </th>
+    </tr>
+    {% for item in results%}
+        <tr>
+            {% for val in item%}
+            <td>
+                {{val}}
+            </td>
+            {% endfor%}
+        </tr>
+    {% endfor %}
+</table>
